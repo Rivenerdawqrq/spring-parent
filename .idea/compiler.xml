@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="ch23-mvc-static" />
+        <module name="xxx-service" />
+        <module name="ch15-code-container-ioc-aop-tx" />
+        <module name="ch21-mvc-validation" />
+        <module name="ssm-code-second" />
+        <module name="ch05-spring-dbutils-druid" />
+        <module name="ch02-spring-ioc" />
+        <module name="ch07-spring-mybatis-druid-good" />
+        <module name="ch17-mvc-helloworld" />
+        <module name="ch09-spring-aop-advice" />
+        <module name="ch12-spring-tx" />
+        <module name="xxx-web" />
+        <module name="ssm-xml-second" />
+        <module name="ch15-work" />
+        <module name="ch04-spring-log-logback" />
+        <module name="ch10-spring-aop-pointcut" />
+        <module name="ssm-insert-try" />
+        <module name="ch27-mvc-file" />
+        <module name="ch31-mvc-code" />
+        <module name="ch20-mvc-receive-data" />
+        <module name="ch08-spring-aop" />
+        <module name="ch26-mvc-interceptor" />
+        <module name="xxx-entity" />
+        <module name="ch11-spring-advisor" />
+        <module name="ch14-annotation-tx" />
+        <module name="ssm-json" />
+        <module name="ch13-annotation-container-ioc-aop" />
+        <module name="spring-mybatis-tx" />
+        <module name="ch01-spring-container" />
+        <module name="spring-context" />
+        <module name="ch19-spring-request-mapping" />
+        <module name="xxx-dao" />
+        <module name="ch30-servlet" />
+        <module name="ssm-code" />
+        <module name="ch28-ssm-xml" />
+        <module name="ch24-mvc-json" />
+        <module name="ch03-spring-autowire" />
+        <module name="ch16-code-mybatis" />
+        <module name="ch22-mvc-view" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="spring-mybatis-tx" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

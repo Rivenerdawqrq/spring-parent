@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dao.DeptDao">
+   <insert id="insert" parameterType="com.entity.Dept">
+        insert into dept(deptname) values (#{dept.deptName})
+   </insert>
+
+    <insert id="userAdd" parameterType="com.entity.UserInfos">
+        insert into userinfos(id, name, address, birthday, deposit)
+        values (#{user.id},#{user.name},#{user.address},#{user.birthday},#{user.deposit})
+    </insert>
+
+
+</mapper>

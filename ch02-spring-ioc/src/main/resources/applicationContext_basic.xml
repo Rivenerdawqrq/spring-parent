@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="first" class="inject.basic.DbConfig">
+        <property name="url" value="2"/>
+        <property name="password" value="3"/>
+        <property name="username" value="22"/>
+        <property name="driverClassname" value="233"/>
+        <constructor-arg name="password" value="3"></constructor-arg>
+        <constructor-arg name="username" value="3"></constructor-arg>
+        <constructor-arg name="url" value="3"></constructor-arg>
+    </bean>
+</beans>

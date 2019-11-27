@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dao.UsersDao">
+    <select id="getAll" resultType="com.entity.UserInfos">
+        select id, name, address, birthday from userinfos order by id
+    </select>
+    
+    <insert id="insert" parameterType="com.entity.UserInfos">
+        insert into userinfos(id,name,address,birthday)
+        values (#{user.id},#{user.name},#{user.address},#{user.birthday})
+    </insert>
+</mapper>

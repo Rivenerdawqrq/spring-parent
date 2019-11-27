@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch01-spring-container" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch02-spring-ioc" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch03-spring-autowire" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch04-spring-log-logback" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch05-spring-dbutils-druid" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch07-spring-mybatis-druid-good" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch08-spring-aop" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch09-spring-aop-advice" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch10-spring-aop-pointcut" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch11-spring-advisor" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch12-spring-tx" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch13-annotation-container-ioc-aop" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch14-annotation-tx" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch15-code-container-ioc-aop-tx" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch15-work" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch16-code-mybatis" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch17-mvc-helloworld" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch19-spring-request-mapping" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch20-mvc-receive-data" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch21-mvc-validation" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch22-mvc-view" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch23-mvc-static" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch24-mvc-json" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch26-mvc-interceptor" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch27-mvc-file" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch28-ssm-xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch29-ssm-xml-multi-model-parent" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch29-ssm-xml-multi-model-parent/xxx-dao" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch29-ssm-xml-multi-model-parent/xxx-entity" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch29-ssm-xml-multi-model-parent/xxx-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch29-ssm-xml-multi-model-parent/xxx-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch30-servlet" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch31-mvc-code" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-context" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-mybatis-tx" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ssm-code" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ssm-code-second" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ssm-insert-try" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ssm-json" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ssm-xml-second" charset="UTF-8" />
+  </component>
+</project>

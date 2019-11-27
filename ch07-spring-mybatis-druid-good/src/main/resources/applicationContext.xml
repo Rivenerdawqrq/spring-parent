@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mybatis="http://mybatis.org/schema/mybatis-spring"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/aop https://www.springframework.org/schema/aop/spring-aop.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd http://mybatis.org/schema/mybatis-spring http://mybatis.org/schema/mybatis-spring.xsd">
+    <context:property-placeholder location="classpath:db.properties" local-override="true"/>
+
+
+    <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource">
+        <property name="username" value="${jdbc.username}"/>
+        <property name="password" value="${jdbc.password}"/>
+        <property name="url" value="${jdbc.url}"/>
+    </bean>
+
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"></property>
+        <!--  configLocation就是引入mybatis的配置文件.-->
+        <property name="configLocation" value="classpath:mybatis-config.xml"/>
+    </bean>
+
+    <!--
+   scan:扫描的意思
+   base:基础
+   package:包
+   扫描com.dao下面的所有类依旧com.dao的所有子包下面类
+
+   配置scan时可以不需要指定sqlSessionFactory,因为它会利用
+   自动装配的机制找到当前spring容器中的sqlSessionFactory
+
+   这个扫描会包里面的所有的dao的实现类都创建出来并注册到spring容器中
+   -->
+    <mybatis:scan base-package="com.dao"/>
+    <bean id="deptService" class="com.service.impl.DeptServiceImpl" autowire="byType"/>
+<!--    <bean id="depts" class="com.service.impl.DeptServiceImpl"></bean>-->
+    <bean id="log" class="com.LogImpl"></bean>
+    <aop:config>
+        <!--切面类配置-->
+        <aop:aspect id="logAspect" ref="log">
+            <!--切点表达式-->
+            <aop:pointcut id="myPointCut" expression="execution(* com.*.*.*(..))"/>
+
+            <aop:before method="before" pointcut-ref="myPointCut"></aop:before>
+        </aop:aspect>
+    </aop:config>
+</beans>
